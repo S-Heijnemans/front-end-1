@@ -11,8 +11,9 @@ function PokeApiList() {
     return(
         <>
             {pokemon.map((poke) => (
-                <div key={poke.id}>
+                <div >
                     <h1>{poke.name}</h1>
+                    <p>{poke.id}</p>
                     <p>Height: {poke.height}</p>
                     <p>Weight: {poke.weight}</p>
                     <img src={poke.sprites.front_default} alt={`${poke.name} image`}/>

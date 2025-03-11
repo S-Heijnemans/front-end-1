@@ -13,7 +13,10 @@ function App() {
       <div>
         <Header/>
       </div>
+      <div>
         <PokeApiList />
+      </div>
+        
     </body>
   )
 }

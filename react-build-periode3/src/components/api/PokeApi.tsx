@@ -3,9 +3,6 @@ export interface Poke {
     name: string;
     height: string;
     weight: string;
-    // abilities: [
-    //     name: string
-    // ];
     sprites: {
         front_default: string;
       };
