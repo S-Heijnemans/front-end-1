@@ -17,8 +17,6 @@ async function fetchPoke(): Promise<Poke[]> {
         return pokeData.json();
     }); 
 
-    console.log(pokemonPromises);
-
     return Promise.all(pokemonPromises);
 }
 
