@@ -13,7 +13,7 @@ function App() {
       <div>
         <Header/>
       </div>
-      <div>
+      <div className="w-[800px] h-[650px] flex justify-center overflow-y-scroll gap-4 p-4">
         <PokeApiList />
       </div>
         
