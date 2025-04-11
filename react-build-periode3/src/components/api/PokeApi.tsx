@@ -12,6 +12,13 @@ export interface PokeAbility {
     };
   }
 
+  interface PokeStats {
+    base_stat: number;
+    stat: {
+      name: string;
+    }
+  }
+
 export interface Poke {
     id: string
     name: string;
@@ -20,8 +27,9 @@ export interface Poke {
     sprites: {
         front_default: string;
       };
-    abilities: PokeAbility[]
+    abilities: PokeAbility[];
     types: PokemonType[];
+    stats: PokeStats[];
 }
 
 async function fetchPoke(): Promise<Poke[]> {
