@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Poke } from "./PokeApi"; 
 import clsx from "clsx";
-     
+//      
 function PokeDetail() {
   const { name } = useParams<{ name: string }>(); 
   const [pokeDetail, setPokeDetail] = useState<Poke | null>(null); 
@@ -32,7 +32,7 @@ function PokeDetail() {
             className="w-48 h-48"
             />
         </div>
-      </div>
+     </div>
       {pokeDetail && (
         <div className="flex flex-col gap-2 items-center p-2 border-size-[1px] border-solid border-2 border-[#000000]">
             <div className="flex flex-row gap-2">
@@ -65,9 +65,11 @@ function PokeDetail() {
                 </li>
                 ))}
             </ul>
+            
         </div>
       )}
-    </div>
+        
+</div>
     
   );
 }
